@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Vui Nhộn</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            background: url('https://via.placeholder.com/1920x1080.png?text=Dog+on+the+beach+at+sunset') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        h1 {
+            margin-top: 20%;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        #yes-button {
+            background-color: rgba(0, 255, 0, 0.7);
+        }
+
+        #no-button {
+            background-color: rgba(255, 0, 0, 0.7);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 1.2em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>Ngoài ăn cứt, bạn có ăn gì khác nữa không?</h1>
+    <div class="buttons">
+        <button id="yes-button" onmouseover="changeToNo()">Yes</button>
+        <button id="no-button">No</button>
+    </div>
+    <footer>
+        Ký tên: Hải Phương
+    </footer>
+    <script>
+        function changeToNo() {
+            const yesButton = document.getElementById('yes-button');
+            yesButton.textContent = 'No';
+            yesButton.style.backgroundColor = 'rgba(255, 0, 0, 0.7)';
+        }
+    </script>
+</body>
+</html>
